@@ -93,7 +93,61 @@ INSERT INTO JobPosts (Title, Company, Region, ExperienceLevel, PostedDate) VALUE
 ('Mobile Development Manager', 'Symbyosis', 'Alexandria', 'Senior', '2023-10-25'),
 ('Python Data Engineer', 'Aman', 'Cairo', 'Senior', '2023-09-08'),
 ('PHP Technical Lead', 'Breadfast', '6 October', 'Senior', '2023-10-26'),
-('Chief Technology Officer', 'Trella', 'Remote', 'Senior', '2023-09-07');
+('Chief Technology Officer', 'Trella', 'Remote', 'Senior', '2023-09-07'),
+
+-- ITWorx (5 postings)
+('Frontend Developer (React)', 'ITWorx', 'Cairo', 'Junior', '2023-10-01'),
+('Senior .NET Developer', 'ITWorx', 'Smart Village', 'Senior', '2023-09-15'),
+('DevOps Engineer', 'ITWorx', 'Cairo', 'Mid', '2023-10-10'),
+('Junior QA Engineer', 'ITWorx', 'Giza', 'Junior', '2023-09-25'),
+('Technical Lead', 'ITWorx', 'Cairo', 'Senior', '2023-10-05'),
+
+-- Valeo (4 postings)
+('Embedded Software Engineer', 'Valeo', '6 October', 'Mid', '2023-10-12'),
+('Automotive Software Developer', 'Valeo', '6 October', 'Junior', '2023-09-18'),
+('Senior C++ Engineer', 'Valeo', 'Smart Village', 'Senior', '2023-10-08'),
+('Software Architect', 'Valeo', '6 October', 'Senior', '2023-09-28'),
+
+-- Fawry (3 postings)
+('Mobile Developer (Flutter)', 'Fawry', '6 October', 'Mid', '2023-09-20'),
+('Backend Developer (Java)', 'Fawry', 'Cairo', 'Mid', '2023-10-15'),
+('Senior PHP Developer', 'Fawry', 'Giza', 'Senior', '2023-09-30'),
+
+-- Other companies with multiple postings
+('Frontend Developer', 'Sarmady', 'Smart Village', 'Junior', '2023-10-03'),
+('Full Stack Developer', 'Sarmady', 'Smart Village', 'Mid', '2023-09-22'),
+('Senior Frontend Engineer', 'Sarmady', 'Cairo', 'Senior', '2023-10-18'),
+
+('Junior React Developer', 'Bey2ollak', 'Cairo', 'Junior', '2023-09-17'),
+('Senior Android Developer', 'Bey2ollak', 'Remote', 'Senior', '2023-10-07'),
+
+('.NET Developer', 'Link Development', 'Smart Village', 'Mid', '2023-09-29'),
+('Senior .NET Architect', 'Link Development', 'Smart Village', 'Senior', '2023-10-11'),
+
+-- Single postings from other companies
+('Python Data Engineer', 'IBM Egypt', 'Cairo', 'Mid', '2023-10-14'),
+('Laravel Developer', 'Teqneia', 'Alexandria', 'Junior', '2023-09-24'),
+('Software Engineer', 'Orange Egypt', 'Cairo', 'Junior', '2023-10-02'),
+('Flutter Developer', 'Souqalmal', 'Remote', 'Junior', '2023-09-27'),
+('Java Developer', 'Etisalat Egypt', 'Cairo', 'Mid', '2023-10-16'),
+('Web Developer', 'Almosafer', 'Giza', 'Junior', '2023-09-19'),
+('Angular Developer', 'Espace', 'Smart Village', 'Mid', '2023-10-09'),
+('DevOps Engineer', 'Inova', '6 October', 'Mid', '2023-09-26'),
+('Database Developer', 'Si-Ware Systems', 'Giza', 'Junior', '2023-10-04'),
+('Node.js Developer', 'Aqarmap', 'Cairo', 'Mid', '2023-09-21'),
+('Software Engineer', 'Halan', 'Remote', 'Junior', '2023-10-06'),
+
+-- Additional repeated companies
+('Senior Frontend Developer', 'Swvl', 'Cairo', 'Senior', '2023-09-23'),
+('Backend Engineer', 'Swvl', 'Cairo', 'Mid', '2023-10-13'),
+('QA Automation Engineer', 'Swvl', 'Remote', 'Mid', '2023-09-16'),
+
+('Software Engineer II', 'Microsoft Egypt', 'Smart Village', 'Mid', '2023-10-17'),
+('Principal Engineer', 'Microsoft Egypt', 'Smart Village', 'Senior', '2023-09-14'),
+
+('Full Stack Developer', 'Vezeeta', '6 October', 'Mid', '2023-10-19'),
+('Mobile Team Lead', 'Vezeeta', '6 October', 'Senior', '2023-09-13');
+
 
 -- Assign skills to jobs (Complete for all 50 positions)
 INSERT INTO JobSkills (JobID, SkillID, IsRequired) VALUES
@@ -151,4 +205,57 @@ INSERT INTO JobSkills (JobID, SkillID, IsRequired) VALUES
 (47, 7, 1), (47, 13, 1), (47, 21, 1), (47, 22, 1), (47, 23, 1), (47, 25, 1), (47, 28, 1),                                         -- Symbyosis
 (48, 2, 1), (48, 12, 1), (48, 17, 1), (48, 21, 1), (48, 22, 1), (48, 25, 1), (48, 27, 1), (48, 29, 1),                           -- Aman
 (49, 5, 1), (49, 11, 1), (49, 15, 1), (49, 21, 1), (49, 22, 1), (49, 26, 1), (49, 27, 1), (49, 29, 1),                           -- Breadfast
-(50, 1, 1), (50, 2, 1), (50, 3, 0), (50, 21, 1), (50, 22, 1), (50, 25, 1), (50, 27, 1), (50, 28, 1), (50, 29, 1), (50, 30, 1);   -- Trella
+(50, 1, 1), (50, 2, 1), (50, 3, 0), (50, 21, 1), (50, 22, 1), (50, 25, 1), (50, 27, 1), (50, 28, 1), (50, 29, 1), (50, 30, 1),   -- Trella
+
+-- ITWorx Positions
+(1, 1, 1), (1, 8, 1), (1, 20, 1), (1, 25, 1),                   -- Junior React
+(2, 4, 1), (2, 10, 1), (2, 15, 1), (2, 22, 1), (2, 27, 1), (2, 29, 1), -- Senior .NET
+(3, 21, 1), (3, 22, 1), (3, 30, 1),                              -- DevOps
+(4, 20, 1), (4, 25, 1),                                           -- Junior QA
+(5, 1, 1), (5, 4, 1), (5, 10, 1), (5, 21, 1), (5, 22, 1), (5, 27, 1), (5, 29, 1), (5, 30, 1), -- Tech Lead
+
+-- Valeo Positions
+(6, 3, 1), (6, 14, 1), (6, 18, 1), (6, 25, 1),                   -- Embedded
+(7, 3, 1), (7, 25, 1),                                            -- Junior Automotive
+(8, 3, 1), (8, 14, 1), (8, 18, 1), (8, 22, 1), (8, 27, 1), (8, 29, 1), -- Senior C++
+(9, 3, 1), (9, 4, 1), (9, 10, 1), (9, 22, 1), (9, 27, 1), (9, 29, 1), (9, 30, 1), -- Architect
+
+-- Fawry Positions
+(10, 7, 1), (10, 13, 1), (10, 21, 1),                            -- Flutter
+(11, 3, 1), (11, 14, 1), (11, 16, 1), (11, 21, 1),               -- Java Backend
+(12, 5, 1), (12, 11, 1), (12, 15, 1), (12, 21, 1), (12, 26, 1),  -- Senior PHP
+
+-- Sarmady Positions
+(13, 1, 1), (13, 8, 1), (13, 20, 1),                             -- Junior Frontend
+(14, 1, 1), (14, 2, 1), (14, 8, 1), (14, 12, 1), (14, 20, 1),    -- Full Stack
+(15, 1, 1), (15, 6, 1), (15, 8, 1), (15, 21, 1), (15, 22, 1), (15, 28, 1), -- Senior Frontend
+
+-- Other positions (continued pattern...)
+(16, 1, 1), (16, 8, 1), (16, 20, 1),                             -- Bey2ollak React
+(17, 3, 1), (17, 14, 1), (17, 21, 1), (17, 22, 1), (17, 25, 1),  -- Senior Android
+(18, 4, 1), (18, 10, 1), (18, 15, 1), (18, 20, 1),               -- .NET Dev
+(19, 4, 1), (19, 10, 1), (19, 15, 1), (19, 22, 1), (19, 27, 1), (19, 29, 1), -- .NET Architect
+(20, 2, 1), (20, 12, 1), (20, 17, 1), (20, 21, 1),               -- Python Data
+(21, 5, 1), (21, 11, 1), (21, 15, 1), (21, 20, 1),               -- Laravel
+(22, 3, 1), (22, 14, 1), (22, 20, 1),                            -- Orange
+(23, 7, 1), (23, 13, 1), (23, 20, 1),                            -- Flutter
+(24, 3, 1), (24, 14, 1), (24, 16, 1), (24, 21, 1),               -- Java
+(25, 1, 1), (25, 5, 1), (25, 9, 0), (25, 20, 1),                 -- Web
+(26, 1, 1), (26, 6, 1), (26, 9, 1), (26, 21, 1),                 -- Angular
+(27, 21, 1), (27, 22, 1), (27, 30, 1),                           -- DevOps
+(28, 15, 1), (28, 16, 1), (28, 18, 0), (28, 20, 1),              -- Database
+(29, 1, 1), (29, 6, 1), (29, 14, 1), (29, 21, 1),                -- Node.js
+(30, 2, 1), (30, 12, 1), (30, 21, 0), (30, 25, 1),               -- Halan
+
+-- Swvl Positions
+(31, 1, 1), (31, 6, 1), (31, 8, 1), (31, 21, 1), (31, 22, 1), (31, 28, 1), -- Senior Frontend
+(32, 2, 1), (32, 12, 1), (32, 16, 1), (32, 21, 1), (32, 28, 1),  -- Backend
+(33, 20, 1), (33, 21, 1), (33, 30, 1),                            -- QA Automation
+
+-- Microsoft Positions
+(34, 3, 1), (34, 4, 1), (34, 10, 1), (34, 22, 1), (34, 25, 1),   -- Software Eng II
+(35, 3, 1), (35, 4, 1), (35, 10, 1), (35, 22, 1), (35, 27, 1), (35, 29, 1), (35, 30, 1), -- Principal
+
+-- Vezeeta Positions
+(36, 1, 1), (36, 2, 1), (36, 8, 1), (36, 12, 1), (36, 21, 1),    -- Full Stack
+(37, 7, 1), (37, 13, 1), (37, 21, 1), (37, 22, 1), (37, 25, 1);  -- Mobile Lead
